@@ -210,6 +210,7 @@ html {
      .social_icon{
       display: flex;
       margin: 2px !important;
+          align-items: center;
     }
     .social_icon .row {
       margin: 2px !important;

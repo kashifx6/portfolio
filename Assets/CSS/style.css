@@ -205,9 +205,11 @@ html {
     ul li{
       font-size: 12px;
       background-color: #333;
-      color:white !important;
-    }
       
+    }
+      .nav a {
+    color: white;
+}
      .social_icon{
       display: flex;
       margin: 2px !important;

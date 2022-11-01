@@ -191,6 +191,10 @@ html {
    width:100% !important;
    padding:2px !important;
     }
+    .top_data h1
+      {
+          text-align:center;
+      }
      ul {
     position: relative !important;
     flex-direction: column;

@@ -184,3 +184,10 @@ html {
     color: rgb(111, 17, 204) !important;
     font-weight: bolder !important;
   }
+
+  @media only screen and (max-width: 800px) {
+    .top_data {
+   margin:2px;
+   width:100%;
+    }
+  }

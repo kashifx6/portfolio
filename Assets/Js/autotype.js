@@ -1,8 +1,8 @@
 var _CONTENT = [
-    "Full stack web developer.",
+    "Full Stack Web Developer.",
     "A Freelancer.",
     "React Js Developer.",
-    "Exceptional programmer.",
+    "A Youtuber.",
     "PHP developer.",
   ];
 

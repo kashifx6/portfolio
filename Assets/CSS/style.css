@@ -191,4 +191,10 @@ html {
    width:100% !important;
    padding:2px !important;
     }
+        ul {
+  width: 100%;
+    }
+    ul li{
+      font-size: 12px;
+    }
   }

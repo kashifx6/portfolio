@@ -197,4 +197,11 @@ html {
     ul li{
       font-size: 12px;
     }
+       .social_icon{
+      display: flex;
+      margin: 2px !important;
+    }
+    .social_icon .row {
+      margin: 2px !important;
+    }
   }

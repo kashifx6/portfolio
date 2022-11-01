@@ -205,8 +205,9 @@ html {
     ul li{
       font-size: 12px;
       background-color: #333;
-      color:white
+      color:white;
     }
+      
      .social_icon{
       display: flex;
       margin: 2px !important;

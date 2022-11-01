@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="Assets/Js/Jscode.js"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <style></style>
+  <body>
+    <ul class="nav fixed-top justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume">Resume</a>
+      </li>
+    </ul>
+
+    <div id="home" style="height: 550px" class="mt-5 container">
+      <canvas id="canvas"></canvas>
+      <div class="m-5 d-flex">
+        <div class="m-5">
+          <div class="row m-5">
+            <i class="fa-brands fa-instagram blue_icon"></i>
+          </div>
+          <div class="row m-5">
+            <i class="fa-brands fa-skype"></i>
+          </div>
+          <div class="row m-5">
+            <i class="fa-brands fa-linkedin blue_icon"></i>
+          </div>
+          <div class="row m-5">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="row m-5">
+            <i class="fa-brands fa-github blue_icon"></i>
+          </div>
+        </div>
+
+        <div class="w-25 m-5">
+          <h1>
+            Hi ,<b> I'm </b>
+            Kashif
+          </h1>
+          <div id="text"></div>
+          <div id="cursor"></div>
+          <br />
+          <small
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi
+            cumque libero blanditiis voluptatum <b>laboriosam</b> debitis
+            dolorum quia vitae fugit doloribus eligendi odit nihil, nemo eveniet
+            beatae. Modi, molestias repellat.</small
+          >
+          <hr />
+          <a href="#contact" class="btn btn-info btn_home">
+            Hire Me <i class="fa-solid fa-circle-arrow-right"></i>
+          </a>
+          <div class="d-flex mt-5">
+            <div class="mouse"></div>
+            <a href="#skills" class="m-2">
+              <small>Scroll Down <i class="fa-solid fa-arrow-down"></i></small>
+            </a>
+          </div>
+        </div>
+        <div class="w-25 m-5">
+          <img
+            src="Assets/Images/user1.png"
+            height="300px"
+            class="rounded-circle"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="go-top">
+      <p class="go-top-text">Back To Top</p>
+    </div>
+
+    <!-- about  -->
+    <div id="about" class="container-fluid bg-light">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 ml-5 ">
+          <div class="m-5 p-5">
+            <h1>So , <b>Who</b> Am I <b>?</b></h1>
+            <small class="text-secondary"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate ad dolores <b>exercitationem</b>, pariatur consequuntur
+              aperiam perspiciatis labore harum sunt quisquam autem aliquam
+              mollitia possimus tenetur qui? Suscipit molestias labore in.
+            </small>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vLRf5mevipw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div id="skills" class="container">
+      <h1 class="text-center">My <b>Skills</b></h1>
+      <div class="row mt-2">
+        <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+          <img src="Assets/Images/user2.png" class="img-fluid" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
+          <p class="skill_para text-secondary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+            consequatur blanditiis necessitatibus nam quidem. Asperiores nemo .
+          </p>
+          <label for="html_bar">HTML</label>
+          <div id="html_bar" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 97%"
+              aria-valuenow="97"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              97%
+            </div>
+          </div>
+          <label for="css_bar">CSS</label>
+          <div id="css_bar" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 92%"
+              aria-valuenow="92"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              92%
+            </div>
+          </div>
+          <label for="Javascript">JAVASCRIPT</label>
+          <div id="Javascript" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 78%"
+              aria-valuenow="78"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              78%
+            </div>
+          </div>
+          <label for="jquery">JQUERY</label>
+          <div id="Javascript" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 86%"
+              aria-valuenow="86"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              86%
+            </div>
+          </div>
+          <label for="react_js">REACT JS</label>
+          <div id="react_js" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 84%"
+              aria-valuenow="84"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              84%
+            </div>
+          </div>
+
+          <label for="80%">PHP</label>
+          <div id="php_bar" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="80"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              80%
+            </div>
+          </div>
+          <label for="bootstrap">BOOTSTRAP</label>
+          <div id="bootstrap" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 95%"
+              aria-valuenow="95"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              95%
+            </div>
+          </div>
+          <label for="wordpress">WORDPRESS</label>
+          <div id="wordpress" class="progress mb-2" style="height: 10px">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 65%"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              65%
+            </div>
+          </div>
+          <div class="d-flex">
+            <a href="#contact" class="btn btn-dark m-1 btn_skills">
+              Hire Me <i class="fa-solid fa-location-arrow"></i>
+            </a>
+            <button class="btn btn-dark m-1 btn_skills">
+              Download Resume <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div id="portfolio" class="container-fluid">
+      <h1 class="text-center m-3">My <b>Portfolio</b></h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="Assets/Images/website1.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Boat on Calm Water"
+          />
+
+          <img
+            src="Assets/Images/website5.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Wintry Mountain Landscape"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/5e593fb060cf87c27275f53c_Weblow-Template-Presentation-Soft-Template-thumbnail-560x720.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="Assets/Images/website3.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Boat on Calm Water"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="Assets/Images/website2.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Portfolio website"
+          />
+
+          <img
+            src="Assets/Images/website4.png"
+            class="w-100 shadow-1-strong rounded mb-4 portfolio_img"
+            alt="Online Attendance System"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <!-- contact  -->
+    <div id="contact" class="container bg-light rounded p-3">
+      <h1 class="text-center m-2">Lets <b>Get</b> Connected <b>!</b></h1>
+      <form>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            required
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput"><b>Email address</b></label>
+          <small class="text-secondary"
+            >We will not share your email with anyone else.</small
+          >
+        </div>
+        <div class="row">
+          <div class="col sm-12">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput"><b>First Name</b></label>
+            </div>
+          </div>
+          <div class="col sm-12">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                required
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput"><b>Last Name</b></label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            required
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2"><b>Message</b></label>
+        </div>
+        <div class="col text-center mt-2 mb-2">
+          <button class="btn btn-dark" style="width: 100%">
+            Submit <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- resume  -->
+    <div id="resume" class="container p-3">
+      <h1 class="text-center">My <b>Resume</b></h1>
+      <div class="row m-2">
+        <div class="col sm-12 resume_image">
+          <div class="m-5 p-5">
+            <h1 class="text-light mt-3">
+              <i class="fa-solid fa-location-dot"></i> Address
+            </h1>
+            <small class="text-success">Islamabad i9 , Pakistan</small>
+            <h1 class="text-light mt-3">
+              <i class="fa-solid fa-mobile"></i> Lets Talk
+            </h1>
+            <small class="text-success">+923125445614</small>
+            <h1 class="text-light mt-3">
+              <i class="fa-solid fa-envelope"></i> Gmail
+            </h1>
+            <small class="text-success">mkashifx6@gmail.com</small>
+          </div>
+        </div>
+        <div class="col sm-12 p-0 resume_cv">
+          <img src="Assets/Images/cv.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+<script src="Assets/Js/autotype.js"></script>

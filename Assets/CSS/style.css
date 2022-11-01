@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth;
+  }
+  .fa-brands {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .fa-brands:hover {
+    font-size: 30px;
+    text-shadow: 1px 1px rgb(191, 185, 185);
+  }
+  .blue_icon {
+    color: rgb(120, 20, 220);
+  }
+
+  .nav a {
+    color: rgb(14, 13, 13);
+  }
+  .nav a:hover {
+    color: rgb(111, 17, 204);
+    font-weight: bolder;
+  }
+  #text {
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(111, 17, 204);
+    letter-spacing: 2px;
+  }
+
+  #cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 50px;
+    background-color: rgb(111, 17, 204);
+    animation: blink 0.75s step-end infinite;
+  }
+  h1 {
+    text-shadow: 1px 1px rgb(208, 204, 204);
+  }
+  @keyframes blink {
+    from,
+    to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: rgb(111, 17, 204);
+    }
+  }
+  canvas {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 550px;
+  }
+  .portfolio_img,
+  .resume_cv {
+    transition: transform 0.2s;
+  }
+
+  .portfolio_img:hover,
+  .resume_cv:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+  }
+
+  .btn_home {
+    background-color: rgb(111, 17, 204);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 45px;
+  }
+  .btn_home:hover {
+    background-color: rgb(103, 17, 189);
+    color: white;
+  }
+
+  /* for mouse */
+  .mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 60px;
+    position: relative;
+  }
+  .mouse::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(103, 17, 189);
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+
+  @-webkit-keyframes wheel {
+    to {
+      opacity: 0;
+      top: 60px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: rgb(103, 17, 189);
+  }
+  /* back to top button  */
+  .go-top {
+    position: fixed;
+    bottom: 20%;
+    right: 3%;
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+  }
+  .go-top:after {
+    font-family: FontAwesome;
+    content: "\f106";
+    background-color: rgb(111, 17, 204);
+    padding: 10px 15px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    font-size: 28px;
+  }
+
+  .go-top-text {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin: 20px 0 0 -4px;
+  }
+
+  .go-top:hover {
+    transition: all 0.4s linear;
+    transform: scale(1.1);
+  }
+  b {
+    color: rgb(111, 17, 204);
+    font-weight: normal;
+  }
+  .progress-bar {
+    background-color: rgb(111, 17, 204);
+  }
+  label {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .skill_para {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .resume_image {
+    background: url("../Images/resume.jpg") fixed;
+    opacity: 0.9;
+  }
+
+  .active {
+    border-bottom: 2px solid rgb(111, 17, 204);
+    color: rgb(111, 17, 204) !important;
+    font-weight: bolder !important;
+  }

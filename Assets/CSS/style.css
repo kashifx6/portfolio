@@ -216,4 +216,7 @@ html {
     .social_icon .row {
       margin: 2px !important;
        }
+     .btn {
+       width:100%;  
+      }
   }

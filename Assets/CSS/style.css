@@ -187,7 +187,8 @@ html {
 
   @media only screen and (max-width: 800px) {
     .top_data {
-   margin:2px;
-   width:100%;
+   margin:2px !important;
+   width:100% !important;
+   padding:2px !important;
     }
   }

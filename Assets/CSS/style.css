@@ -208,7 +208,7 @@ html {
       
     }
       .nav a {
-    color: white;
+    color: white !important;
 }
      .social_icon{
       display: flex;
